@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,9 +18,43 @@
 
   </head>
   <body>
-      <div id="header">
+    <div id="lefter">
+          <h1 class="lefter">{{ site.title | default: site.github.repository_name }}</h1>
+          <p class="lefter">{{ site.description | default: site.github.project_tagline }}</p>
+
+          <img src="{{ '/assets/images/self.jpeg' | relative_url }}" alt="Ideally this was supposed to be my pic" style="border-radius:50%; max-width:100%; height:auto;" >
+        <br><br>
+        <a href="https://www.linkedin.com/in/shashank-shekhar-70022b144/"><img src="{{ '/assets/images/linkedin.png' | relative_url }}" alt="LinkedIn" style="border-radius:50%; max-width:20%; height:auto;" ></a>
+        <a href="{{ site.github.owner_url }}"><img src="{{ '/assets/images/github.png' | relative_url }}" alt="Github" style="border-radius:50%; max-width:20%; height:auto;" ></a>
+        <a href="https://www.facebook.com/shashank.shekhar.0001/"><img src="{{ '/assets/images/fb.png' | relative_url }}" alt="Facebook" style="border-radius:50%; max-width:20%; height:auto;" ></a>
+        <a href="mailto: shashank.shekhar.0706@gmail.com"><img src="{{ '/assets/images/gmail.png' | relative_url }}" alt="Gmail" style="border-radius:50%; max-width:20%; height:auto;" ></a>
+          <!--
+          <ul>
+              {% if site.show_downloads %}
+              <li class="download"><a class="buttons" href="{{ site.github.zip_url }}">Download ZIP</a></li>
+              <li class="download"><a class="buttons" href="{{ site.github.tar_url }}">Download TAR</a></li>
+              {% endif %}
+              <li><a class="buttons github" href="{{ site.github.repository_url }}">View On GitHub</a></li>
+          </ul>
+          -->
+
+          {% if site.github.is_project_page %}
+          <p class="lefter">This project is maintained by <a class="lefter name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+          {% endif %}
+
+          {% if site.github.is_user_page %}
+          <ul>
+              <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
+          </ul>
+          {% endif %}
+    </div>
+
+  <div id="header">
         <nav>
-          <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
+          <!--<li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>-->
+            <li class="fork" style="float:left"><a href="{{ '/' | relative_url }}">ABOUT</a></li>
+          <li class="fork"><a href="{{ '/' | relative_url }}">HOME</a></li>
+          <li class="fork"><a href="{{ '/blog' | relative_url }}">BLOG</a></li>
           {% if site.show_downloads %}
             <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
             <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
@@ -36,8 +70,8 @@
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
-          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name | default: site.title }}</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Themes: <a href="https://github.com/pages-themes/midnight">Midnight</a>||<a href="https://github.com/pages-themes/dinky">Dinky</a></span>
         </div>
 
         {{ content }}
@@ -45,6 +79,9 @@
       </section>
 
     </div>
+
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="{{ '/assets/js/custom.js' | relative_url }}" type="text/javascript"></script>
 
     {% if site.google_analytics %}
       <script>

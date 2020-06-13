@@ -1,5 +1,7 @@
-title: Midnight theme
-description: Midnight is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: Shashank Shekhar
+description: Both the website and person in development
+show_downloads: false
+google_analytics: false
 theme: jekyll-theme-midnight
+
+permalink: /blog/:year/:month/:day/:title

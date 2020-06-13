@@ -5,7 +5,7 @@
 body {
   padding:0px 0 20px 0px;
   margin: 0px;
-  font:14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px/1.5 'Montserrat',"OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#f0e7d5;
   font-weight: normal;
   background: #252525;
@@ -16,7 +16,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color:#e8e8e8;
   margin:0 0 10px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Questrial','OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -44,7 +44,7 @@ h4, h5, h6 {
 h3 {
   font-size: 18px;
   line-height: 24px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: 'Questrial','OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: normal;
   color: #b6b6b6;
 }
@@ -78,7 +78,7 @@ strong {
 .wrapper {
   max-width:650px;
   margin:0 auto;
-  position:relative;
+  position: relative;
   padding: 0 20px;
 }
 
@@ -155,10 +155,12 @@ dt {
 
 
 #header {
+  overflow: hidden;
   z-index: 100;
   left:0;
   top: 0px;
   height: 60px;
+  transition: height 0.2s ease-out;
   width: 100%;
   position: fixed;
   background: url(../images/nav-bg.gif) #353535;
@@ -187,7 +189,7 @@ dt {
         border: 1px solid #5d910b;
         background: linear-gradient(#93bd20, #659e10);
         border-radius: 2px;
-        box-shadow: inset 0px 1px 0px rgba(255,255,255,.3), 0px 3px 7px rgba(0,0,0,.7);
+        /**box-shadow: inset 0px 1px 0px rgba(255,255,255,.3), 0px 3px 7px rgba(0,0,0,.7);*/
 
         background-color: #93bd20;
         padding: 10px 12px;
@@ -206,8 +208,8 @@ dt {
       }
 
       &.fork {
-        float: left;
-        margin-left: 0px;
+        float: right;
+        margin-left: 2px;
       }
 
       &.downloads {
@@ -230,6 +232,55 @@ section {
   margin: 20px 0;
   margin-top: 70px;
 
+  .collapsible{
+            background-color: #171717;
+            width: 100%;
+            font-family: 'Questrial','OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            color: white;
+            font-size: 25px;
+            text-align: left;
+            line-height: 30px;
+            padding: 10px;
+            border-width: 0px;
+    }
+
+  & .randomGen{
+        background-color:#7a00ff;
+        border: 0px;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        display: block;
+        margin-right: 0px;
+        margin-left: auto;
+  }
+
+  .content{
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.2s ease-out;
+        background-color: #101010;
+  }
+
+  .quote{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        background-color: #171717;
+        font-size: 25px;
+        padding: 10px;
+
+        #author{
+            margin-right: 0;
+            margin-left: auto;
+            font-size: 20px;
+            color: #FFCC00;
+            padding: 10px;
+            text-align: right;
+        }
+  }
+
   #title {
     border: 0;
     outline: none;
@@ -237,7 +288,7 @@ section {
     padding: 0 0 5px 0;
 
     h1 {
-      font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: 'Questrial','OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: normal;
       font-size: 40px;
       text-align: center;
@@ -246,7 +297,7 @@ section {
 
     p {
       color: #d7cfbe;
-      font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: 'Montserrat', 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: normal;
       font-size: 18px;
       text-align: center;
@@ -269,6 +320,147 @@ section {
     }
 
   }
+}
+
+
+#lefter {
+	background-color: #171717;
+	color: #FDFDFB;
+	overflow: hidden;
+	top:0px;
+    width:170px;
+    transition: width 1s ease-out;
+    float:left;
+    height:100%;
+    position:fixed;
+    z-index: 200;
+	border: 1px solid #000;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	padding: 34px 25px 22px 50px;
+	margin: 0px 25px 0 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+p.lefter {
+	font-size: 16px;
+}
+
+h1.lefter {
+	font-family: 'Questrial','OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 1.3em;
+	border-bottom: none;
+	margin-top: 0;
+}
+
+
+h1.lefter, a.lefter, a.name, lefter a{
+	color: #fff;
+}
+
+a.lefter {
+	text-decoration: underline;
+}
+
+a.name {
+	white-space: nowrap;
+}
+
+lefter ul {
+  list-style:none;
+  padding:0;
+}
+
+lefter li {
+	list-style-type: none;
+    width:132px;
+    height:15px;
+	margin-bottom: 12px;
+	line-height: 1em;
+	padding: 6px 6px 6px 7px;
+
+	background: #AF0011;
+	background: -moz-linear-gradient(top, #AF0011 0%, #820011 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+    background: -webkit-linear-gradient(top, #AF0011 0%,#820011 100%);
+    background: -o-linear-gradient(top, #AF0011 0%,#820011 100%);
+    background: -ms-linear-gradient(top, #AF0011 0%,#820011 100%);
+    background: linear-gradient(to top, #AF0011 0%,#820011 100%);
+
+	border-radius:4px;
+    border:1px solid #0D0D0D;
+
+	-webkit-box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
+	box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
+
+}
+
+lefter li:hover {
+	background: #C3001D;
+	background: -moz-linear-gradient(top, #C3001D 0%, #950119 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+    background: -webkit-linear-gradient(top, #C3001D 0%,#950119 100%);
+    background: -o-linear-gradient(top, #C3001D 0%,#950119 100%);
+    background: -ms-linear-gradient(top, #C3001D 0%,#950119 100%);
+    background: linear-gradient(to top, #C3001D 0%,#950119 100%);
+}
+
+a.buttons {
+	-webkit-font-smoothing: antialiased;
+	background: url(../images/arrow-down.png) no-repeat;
+	font-weight: normal;
+	text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
+	padding: 2px 2px 2px 22px;
+	height: 30px;
+}
+
+a.github {
+	background: url(../images/octocat-small.png) no-repeat 1px;
+}
+
+a.buttons:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+@media print, screen and (max-width: 1160px) {
+
+    .wrapper{
+        margin:0 auto auto 247px;
+    }
+
+    #header{
+        nav{
+            max-width: 650px;
+            margin:0 auto auto 247px;
+        }
+    }
+}
+
+
+@media print, screen and (max-width: 940px){
+    #lefter{
+        width:0;
+        height:0;
+        display: None;
+    }
+
+    .wrapper{
+        margin:0 auto;
+    }
+
+    #header{
+        nav{
+            margin:0 auto;
+         }
+    }
 }
 
 @media print, screen and (max-width: 720px) {
@@ -296,13 +488,14 @@ section {
 @media print, screen and (max-width: 480px) {
 
   #header {
-    margin-top: -20px;
+    margin-top: 0px;
   }
 
   section {
     margin-top: 40px;
   }
-  nav {
+  /**nav {
     display: none;
-  }
+  }*/
 }
+
