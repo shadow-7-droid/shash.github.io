@@ -5,17 +5,26 @@
 body {
   padding:0px 0 20px 0px;
   margin: 0px;
-  font:14px/1.5 'Montserrat',"OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#f0e7d5;
+  font:16px/1.5 'Montserrat',"OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//   color:#f0e7d5;
+  color:#f0e7c0;
+//   color:#ffff99;
   font-weight: normal;
   background: #252525;
   background-attachment: fixed !important;
   background: linear-gradient(#2a2a29, #1c1c1c);
 }
 
+#page_title {
+  color: #ffffff;
+  font-size: 38px;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
-  color:#e8e8e8;
-  margin:0 0 10px;
+  color:#ffffff;
+//   color:#00001a;
+  margin:0px 0px 20px 0px;
   font-family: 'Questrial','OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
@@ -498,4 +507,3 @@ a.buttons:hover {
     display: none;
   }*/
 }
-
