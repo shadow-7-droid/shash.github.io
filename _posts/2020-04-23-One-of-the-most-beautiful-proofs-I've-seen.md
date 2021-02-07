@@ -1,7 +1,7 @@
 ---
 layout: post
 category: Mathematics
-date: 2020-05-28
+date: 2020-04-23
 ---
 
 I came across this question, like every beginner in Mathematics does. It was to figure out whether irrationals raised to irrationals always result in an irrational number.

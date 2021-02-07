@@ -7,8 +7,9 @@ body {
   margin: 0px;
   font:16px/1.5 'Montserrat',"OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 //   color:#f0e7d5;
-  color:#f0e7c0;
+//   color:#f0e7c0;
 //   color:#ffff99;
+  color: grey;
   font-weight: normal;
   background: #252525;
   background-attachment: fixed !important;
@@ -75,9 +76,9 @@ a small {
   display:block;
 }
 
-ul{
-  list-style-image:url('../images/bullet.png');
-}
+// ul{
+//   list-style-image:url('../images/bullet.png');
+// }
 
 strong {
   font-family: 'OpenSansBold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
@@ -93,6 +94,15 @@ strong {
 
 section img {
   max-width: 100%;
+}
+
+.image-wrapper {
+    text-align: center;
+
+    .image-caption {
+        color: grey;
+        margin-top: 1px;
+    }
 }
 
 blockquote {

@@ -1,6 +1,6 @@
 ---
 layout: post
-category: ComputerScience
+category: Computer Science
 title: VPN, Proxies and Hotspot
 ---
 

@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!--
 <br>
 <div class="quote">
 
@@ -31,7 +32,7 @@ layout: default
 <button class="randomGen" id="funnyGen">
     Not funny?
 </button>
-
+-->
 <script src="{{ '/assets/js/homepage.js' | relative_url }}" type="text/javascript">
 
 </script>
