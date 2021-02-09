@@ -43,7 +43,7 @@ $$
 $$
 
 So, M may lie anywhere within a circle of radius r/2. Hence, probability of choosing such a point is:
-<center>$$ 1/4 * \pi * \frac{(r/2)^{2}}{\pi} * r^2$$ </center>
+<center>$$ \pi * \frac{(r/2)^{2}}{\pi* r^2} = \frac{1}{4}$$ </center>
 
 > So, probability of choosing a chord whose length is greater than the side of an inscribed equilateral triangle = 1/4.
 
