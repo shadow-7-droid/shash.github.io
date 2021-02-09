@@ -5,7 +5,7 @@ date: 2020-07-28
 seo_title: Python Design Pattern for Classes - Part II
 ---
 
-Please read the [first part]({% post_url 2020-07-22-Python-Design-Pattern-for-Classes-Part-I %}) as we’ll be using the previously derived results and build on the previous part’s code.
+Please read the [first part]({{ site.baseurl }}{% post_url 2020-07-22-Python-Design-Pattern-for-Classes-Part-I %}) as we’ll be using the previously derived results and build on the previous part’s code.
 
 
 # A New Requirement
